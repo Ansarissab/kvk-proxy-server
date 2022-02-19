@@ -1,0 +1,35 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  kvk_number: MyString
+  branch_number: MyString
+  rsin: MyString
+  street: MyString
+  house_number: MyString
+  trade_name: MyString
+  include_former_trade_name: false
+  include_inactive_registrations: false
+  main_branch: false
+  branch: false
+  legal_person: false
+  start_page: MyString
+  site: MyString
+  context: MyString
+  q: MyString
+
+two:
+  kvk_number: MyString
+  branch_number: MyString
+  rsin: MyString
+  street: MyString
+  house_number: MyString
+  trade_name: MyString
+  include_former_trade_name: false
+  include_inactive_registrations: false
+  main_branch: false
+  branch: false
+  legal_person: false
+  start_page: MyString
+  site: MyString
+  context: MyString
+  q: MyString

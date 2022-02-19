@@ -1,6 +1,15 @@
 <h1>KVK Proxy Server</h1>
-<p>You can sync data!</p>
-<%= link_to 'Sync for KVK number (90005368)', sync_kvk_path, remote: true %>
+<h3>KVK Handelsregister Search</h3>
+<p>
+  &nbsp;
+  <%= link_to 'Let\' search! for real data. Carefull it\'s costly.', new_proxy_path %>
+</p>
+
+<h3>Test search</h3>
+<p>
+  &nbsp;
+  <%= link_to 'Test Sync for KVK number (90005368)', sync_kvk_path, remote: true %>
+</p>
 <pre>
   <code id='data'></code>
 </pre>
