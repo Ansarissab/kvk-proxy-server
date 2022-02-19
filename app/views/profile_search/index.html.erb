@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Proxies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Kvk number</th>
+      <th>Branch number</th>
+      <th>Rsin</th>
+      <th>Street</th>
+      <th>House number</th>
+      <th>Trade name</th>
+      <th>Include former trade name</th>
+      <th>Include inactive registrations</th>
+      <th>Main branch</th>
+      <th>Branch</th>
+      <th>Legal person</th>
+      <th>Start page</th>
+      <th>Site</th>
+      <th>Context</th>
+      <th>Q</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @proxies.each do |proxy| %>
+      <tr>
+        <td><%= proxy.kvk_number %></td>
+        <td><%= proxy.branch_number %></td>
+        <td><%= proxy.rsin %></td>
+        <td><%= proxy.street %></td>
+        <td><%= proxy.house_number %></td>
+        <td><%= proxy.trade_name %></td>
+        <td><%= proxy.include_former_trade_name %></td>
+        <td><%= proxy.include_inactive_registrations %></td>
+        <td><%= proxy.main_branch %></td>
+        <td><%= proxy.branch %></td>
+        <td><%= proxy.legal_person %></td>
+        <td><%= proxy.start_page %></td>
+        <td><%= proxy.site %></td>
+        <td><%= proxy.context %></td>
+        <td><%= proxy.q %></td>
+        <td><%= link_to 'Show', proxy %></td>
+        <td><%= link_to 'Edit', edit_proxy_path(proxy) %></td>
+        <td><%= link_to 'Destroy', proxy, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Proxy', new_proxy_path %>

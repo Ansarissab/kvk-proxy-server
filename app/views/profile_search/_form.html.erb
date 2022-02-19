@@ -1,0 +1,92 @@
+<%= form_with(model: proxy, local: true) do |form| %>
+  <% if proxy.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(proxy.errors.count, "error") %> prohibited this proxy from being saved:</h2>
+
+      <ul>
+        <% proxy.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :kvk_number %>
+    <%= form.text_field :kvk_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :branch_number %>
+    <%= form.text_field :branch_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rsin %>
+    <%= form.text_field :rsin %>
+  </div>
+
+  <div class="field">
+    <%= form.label :street %>
+    <%= form.text_field :street %>
+  </div>
+
+  <div class="field">
+    <%= form.label :house_number %>
+    <%= form.text_field :house_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :trade_name %>
+    <%= form.text_field :trade_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :include_former_trade_name %>
+    <%= form.check_box :include_former_trade_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :include_inactive_registrations %>
+    <%= form.check_box :include_inactive_registrations %>
+  </div>
+
+  <div class="field">
+    <%= form.label :main_branch %>
+    <%= form.check_box :main_branch %>
+  </div>
+
+  <div class="field">
+    <%= form.label :branch %>
+    <%= form.check_box :branch %>
+  </div>
+
+  <div class="field">
+    <%= form.label :legal_person %>
+    <%= form.check_box :legal_person %>
+  </div>
+
+  <div class="field">
+    <%= form.label :start_page %>
+    <%= form.text_field :start_page %>
+  </div>
+
+  <div class="field">
+    <%= form.label :site %>
+    <%= form.text_field :site %>
+  </div>
+
+  <div class="field">
+    <%= form.label :context %>
+    <%= form.text_field :context %>
+  </div>
+
+  <div class="field">
+    <%= form.label :q %>
+    <%= form.text_field :q %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit 'Search' %>
+  </div>
+<% end %>
