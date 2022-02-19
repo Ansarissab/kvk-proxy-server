@@ -9,6 +9,7 @@ class CreateProxies < ActiveRecord::Migration[6.0]
       t.string :trade_name, default: ''
       t.boolean :include_former_trade_name, default: false
       t.boolean :include_inactive_registrations, default: false
+      t.boolean :restrict_to_main_branch, default: false
       t.boolean :main_branch, default: false
       t.boolean :branch, default: false
       t.boolean :legal_person, default: false
